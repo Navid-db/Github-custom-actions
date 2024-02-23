@@ -18,7 +18,7 @@ def run():
 
     website_url = f'http://{bucket}.s3-website-{bucket_region}.amazonaws.com'
     with open(os.environ['GITHUB_OUTPUT'], 'a') as gh_output:
-    print(f'website-url={website_url}', file=gh_output)
+        print(f'website-url={website_url}', file=gh_output)
 
 
 if __name__ == '__main__':
